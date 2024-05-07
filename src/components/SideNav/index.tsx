@@ -40,7 +40,7 @@ const SideNav = ({ selectedNavIndex }: Props) => {
           </Link>
         ))}
       </VStack>
-      <Link target="_blank" to="https://github.com/dospore">
+      <Link target="_blank" to="https://github.com/dospore/avara-challenge">
         <Flex
           justify="center"
           position="absolute"
