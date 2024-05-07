@@ -3,6 +3,8 @@ Steam events on multiple networks and race chains based on activity. Each event 
 
 I wasn't overly stoked with this build since I spent a lot of time and setup on my original idea and had to back track. Was a good learning process though. Learnt a lot about the v3 Portal and how that is intended to function and read the whitelist bridge proposals on the community page (and if I am not mistaken that it is set to be released in v4 instead now).
 
+I should note that I submitted this in one big commit because I revisited it at very sporadic points of the day. I was caught up in meeting a few people so did not have a whole lot of time.
+
 ## Setup
 I used my boilerplate code for this since it puts me in a position that I can start writing the challenge code straight away without having to do any setup. I sometimes use scaffold-eth for this but since I decided not to deploy any contracts for this challenge I went with my personal setup.
 
@@ -23,6 +25,9 @@ Then use a static site server to serve the build package
 
 ### Improvements
 - I wanted to expand on the points system. Instead of having basic addition, you could add various mechanics based on notional value of the Event in relation to previous events, add negative moves if the Event is considered "bad" (this one was an easy add but I removed it), negative move if competing chains got events (eg Arbitrum -0.5 if Optimism got a large Supply).
+- chains with faster blocks and cheaper fees are going to have more activity so should be skewed to get less points or based it off notional
+- I do not handle tied cases (where more than one chain is over the required points to win), this would probably just display all winners
+- bigger celebration if you win with confetti on page
 
 
 ## (Original Idea) Aave Bridge Sluth
