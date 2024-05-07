@@ -5,7 +5,7 @@ import Web3Provider from "./providers/web3";
 
 import App from "./App.tsx";
 
-import '@fontsource-variable/oswald';
+import "@fontsource-variable/oswald";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

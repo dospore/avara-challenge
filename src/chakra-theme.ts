@@ -3,7 +3,7 @@ import { cssVar, extendTheme } from "@chakra-ui/react";
 const $startColor = cssVar("skeleton-start-color");
 const $endColor = cssVar("skeleton-end-color");
 
-const fonts = 'Oswald Variable, sans-serif';
+const fonts = "Oswald Variable, sans-serif";
 
 export const theme = extendTheme({
   styles: {

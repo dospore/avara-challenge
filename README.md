@@ -5,6 +5,8 @@ I wasn't overly stoked with this build since I spent a lot of time and setup on 
 
 I should note that I submitted this in one big commit because I revisited it at very sporadic points of the day. I was caught up in meeting a few people so did not have a whole lot of time.
 
+You can visit the [deployed version of the site](https://avara-challenge.vercel.app/) but note that I use some public RPC's so it might get rate limited. 
+
 ## Setup
 I used my boilerplate code for this since it puts me in a position that I can start writing the challenge code straight away without having to do any setup. I sometimes use scaffold-eth for this but since I decided not to deploy any contracts for this challenge I went with my personal setup.
 
@@ -28,7 +30,6 @@ Then use a static site server to serve the build package
 - chains with faster blocks and cheaper fees are going to have more activity so should be skewed to get less points or based it off notional
 - I do not handle tied cases (where more than one chain is over the required points to win), this would probably just display all winners
 - bigger celebration if you win with confetti on page
-
 
 ## (Original Idea) Aave Bridge Sluth
 Building a bridge explorer which looks for transaction interacting with the Avara Portal to follow cross chain interactions.

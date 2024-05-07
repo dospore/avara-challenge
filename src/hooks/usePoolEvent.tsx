@@ -23,6 +23,6 @@ export const useMultiChainPoolEvent = (name: string, chainId: SupportedNetwork, 
     eventName: name,
     // TODO this is naive since there can be multiple in the logs
     // should process all
-    onLogs: (logs) => callback({ ...logs[0], chainId })
+    onLogs: (logs) => callback({ ...logs[0], chainId }),
   });
 };
