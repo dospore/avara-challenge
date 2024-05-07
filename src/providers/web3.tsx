@@ -1,19 +1,20 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 import { http, WagmiProvider, createConfig } from "wagmi";
-import { arbitrum, arbitrumSepolia, base, mantle } from "wagmi/chains";
+import { arbitrum, avalanche, base, mainnet, optimism, polygon } from "wagmi/chains";
 import type { Children } from "../types/react";
 
 export const config = createConfig(
   getDefaultConfig({
     // Your dApps chains
-    chains: [arbitrum, arbitrumSepolia, mantle, base],
+    chains: [arbitrum, avalanche, base, mainnet, optimism, polygon],
     transports: {
-      // RPC URL for each chain
       [arbitrum.id]: http(import.meta.env.VITE_PUBLIC_ARBITRUM_RPC),
-      [arbitrumSepolia.id]: http(import.meta.env.VITE_PUBLIC_ARBITRUM_SEPOLIA_RPC),
+      [avalanche.id]: http(import.meta.env.VITE_PUBLIC_AVALANCHE_RPC),
       [base.id]: http(import.meta.env.VITE_PUBLIC_BASE_RPC),
-      [mantle.id]: http(import.meta.env.VITE_PUBLIC_MANTLE_RPC),
+      [mainnet.id]: http(import.meta.env.VITE_PUBLIC_MAINNET_RPC),
+      [optimism.id]: http(import.meta.env.VITE_PUBLIC_OPTIMISM_RPC),
+      [polygon.id]: http(import.meta.env.VITE_PUBLIC_POLYGON_RPC),
     },
 
     // Required API Keys

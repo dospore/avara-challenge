@@ -19,3 +19,27 @@
     color: #181818;
   }
 }
+
+.moving-trace {
+  height: 2px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.moving-trace:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%; /* Twice the container's width */
+  height: 100%; 
+  background-image: repeating-linear-gradient(to right, currentColor 0px, currentColor 2px, transparent 2px, transparent 4px);
+  animation: move-trace 5s infinite linear;
+}
+
+@keyframes move-trace {
+  100% {
+    left: -100%; /* Move to the left */
+  }
+}

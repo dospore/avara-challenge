@@ -1,5 +1,5 @@
 {
-  "name": "web3-boilerplate",
+  "name": "avara-challenge-aave-racer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,6 +20,7 @@
     "@tanstack/react-query": "^5.32.1",
     "connectkit": "^1.7.3",
     "framer-motion": "^11.1.7",
+    "immer": "^10.1.1",
     "react": "^18.2.0",
     "react-blockies": "^1.4.1",
     "react-countdown": "^2.3.5",

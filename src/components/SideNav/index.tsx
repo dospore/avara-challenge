@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Text, VStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { NavRouteIndex } from "../../types/nav";
+import type { NavRouteIndex } from "../../types/nav";
 
 import Logo from "../Logo";
 
@@ -12,14 +12,7 @@ const PATHS: {
   icon?: any;
   key: NavRouteIndex;
   route: string;
-}[] = [
-  {
-    text: "Example",
-    icon: logo_icon,
-    key: NavRouteIndex.Example,
-    route: "/example",
-  },
-];
+}[] = [];
 
 type Props = {
   selectedNavIndex?: NavRouteIndex;
@@ -58,7 +51,7 @@ const SideNav = ({ selectedNavIndex }: Props) => {
           opacity={0.6}
           _hover={{ opacity: 0.8 }}
         >
-          <Image src={github_icon} boxSize="2rem" />
+          <Image src={github_icon} boxSize="1.5rem" />
         </Flex>
       </Link>
     </Box>

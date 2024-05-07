@@ -2,7 +2,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Layout from "./components/Layout";
 
-import Landing from "./pages/Landing";
+import Race from "./pages/Race";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Landing />,
+        element: <Race />,
       },
     ],
   },

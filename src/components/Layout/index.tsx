@@ -1,14 +1,12 @@
 import { Box, Grid, Hide, Show } from "@chakra-ui/react";
 import { useLocation } from "react-router-dom";
-import { NavRouteIndex } from "../../types/nav";
+// import { NavRouteIndex } from "../../types/nav";
 import MobilePlaceHolder from "../MobilePlaceHolder";
 import SideNav from "../SideNav";
 
 import type { Children } from "../../types/react";
 
-const paths: Record<string, number> = {
-  example: NavRouteIndex.Example,
-};
+const paths: Record<string, number> = {};
 
 type Props = {} & Children;
 
@@ -18,7 +16,7 @@ function Layout({ children }: Props) {
 
   return (
     <>
-      <Show above="1100px">
+      <Show above="700px">
         <Grid gridTemplateColumns="100px 100%" minHeight="100vh" overflowX="hidden">
           <Box>
             <SideNav selectedNavIndex={paths[page]} />
@@ -28,7 +26,7 @@ function Layout({ children }: Props) {
           </Box>
         </Grid>
       </Show>
-      <Hide above="1100px">
+      <Hide above="700px">
         <Box h="100vh" overflow="hidden">
           <MobilePlaceHolder />
         </Box>
